@@ -1,0 +1,262 @@
+{% extends 'classes/_layout.html' %}
+{% load staticfiles %}
+
+{% block title %}Оставить заявку{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <div class="description-slogan">
+            <div>
+                Камертон - один из ведущих центров дополнительного образования в Сургуте.
+            </div>
+            <br>
+            <div class="description">
+                Мы обучаем детей и подростков <span>хореографии</span>, <span>вокалу</span> и <span>театральному искусству</span>.
+                Чтобы записать ребёнка в студию, ответьте на несколько вопросов<br> и отправьте заявку.
+            </div>
+        </div>
+        <div class="order-form">
+            <div class="loader">
+                <img width="128" src="{% static 'classes/images/loading.gif' %}"/>
+            </div>
+            <div class="order-first-level">
+                <div class="form-first-level-layout">
+                    <div class="form-first-level-layout-block">
+                        <div class="order-form-group">
+                <label>Ваше имя и фамилия:</label>
+                <input class="order-form-input" name="name" placeholder="Введите имя и фамилию">
+            </div>
+                    </div>
+                    <div class="form-first-level-layout-block">
+                         <div class="order-form-group">
+                <label>Контактный телефон:</label>
+                <input class="order-form-alternative-input" name="phone" placeholder="+7 9XX XXX-XX-XX">
+            </div>
+                <div class="order-form-group">
+                <label>Электронная почта:</label>
+                <input class="order-form-input" name="email" placeholder="Введите e-mail">
+            </div>
+                        <div class="error-warning">
+                            Вы допустили ошибку!
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="order-second-level">
+                <div class="order-second-level-description">
+                    Немного информации о вашем ребёнке
+                </div>
+                <div class="form-second-level-layout">
+                    <div class="form-second-level-layout-block">
+                        <div class="order-form-group">
+                <label>Укажите возраст:</label>
+                <input class="order-form-alternative-input" name="age" placeholder="Введите возраст ребёнка">
+            </div>
+                        <div class="age-warning">
+                            Мы обучаем детей от 4-х лет
+                        </div>
+                    </div>
+                    <div class="form-second-level-layout-block">
+                        <div class="order-form-group">
+                            <label>Пол ребёнка:</label>
+                        </div>
+                        <div class="child-gender">
+                        <div class="child-gender-item active">Мальчик</div>
+                        <div class="child-gender-item">Девочка</div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="order-third-level">
+                    <div class="order-third-level-description">
+                        Выберите направление и отправьте заявку
+                    </div>
+                <div class="form-third-level-layout">
+                    <div id="vocal-studio-kind" class="form-third-level-layout-block studio-kind">Студия вокала</div>
+                    <div id="theater-studio-kind" class="form-third-level-layout-block studio-kind">Театральная студия</div>
+                    <div id="modern-choreography-studio-kind" class="form-third-level-layout-block studio-kind">Современная хореография</div>
+                    <div id="sport-ballroom-studio-kind" class="form-third-level-layout-block studio-kind">Спортивные бальные танцы</div>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="management-btns">
+                <div id="order-cancel-btn">
+                    <svg height="40" version="1.1" id="passive-cancel-btn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 89 56" style="enable-background:new 0 0 89 56;" xml:space="preserve">
+<style type="text/css">
+	.st03{fill:#FCEE21;}
+	.st13{fill:none;stroke:#FCEE21;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		<g>
+			<path class="st03" d="M86.1,3v50H22.2L3.6,28L22.2,3H86.1 M89.1,0H20.7L-0.1,28l20.8,28h68.4V0L89.1,0z"/>
+		</g>
+	</g>
+	<g>
+		<line class="st13" x1="37.1" y1="11" x2="71.1" y2="45"/>
+		<line class="st13" x1="37.1" y1="45" x2="71.1" y2="11"/>
+	</g>
+</g>
+</svg>
+                    <svg height="40" version="1.1" id="active-cancel-btn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 89 56" style="enable-background:new 0 0 89 56;" xml:space="preserve">
+<style type="text/css">
+	.st04{fill:#FCEE21;}
+	.st24{fill:none;stroke:#662D91;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		<g>
+			<polygon class="st04" points="20.7,56 89.1,56 89.1,0 20.7,0 -0.1,28 			"/>
+		</g>
+	</g>
+	<g>
+		<line class="st24" x1="37.1" y1="11" x2="71.1" y2="45"/>
+		<line class="st24" x1="37.1" y1="45" x2="71.1" y2="11"/>
+	</g>
+</g>
+</svg>
+                </div>
+                <div id="order-next-btn">
+                    <svg width="240" height="40" version="1.1" id="active-next-btn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 333 56" style="enable-background:new 0 0 333 56;" xml:space="preserve">
+<style type="text/css">
+	.st00{fill:#FCEE21;}
+	.st20{fill:#662D91;}
+</style>
+<g>
+	<polygon class="st00" points="312.2,56 0,56 0,0 312.2,0 333,28 	"/>
+	<g>
+		<g>
+			<path class="st20" d="M114.6,33.9c2.3-0.3,3.5-1.1,4.2-7.4l1.2-11h14.5v18h2v7.2h-3.7v-3.9h-14.5v3.9h-3.7V33.9z M119.7,33.5h11.1
+				V18.8h-7.4l-0.9,7.9C122.1,30.1,121.1,32.2,119.7,33.5z"/>
+			<path class="st20" d="M149.2,36.8v-1.7c-1.2,1.3-2.9,2-5,2c-2.5,0-5.4-1.7-5.4-5.1c0-3.6,2.8-5,5.4-5c2.1,0,3.9,0.7,5,2v-2.3
+				c0-1.8-1.5-2.9-3.6-2.9c-1.7,0-3.2,0.6-4.6,2l-1.4-2.3c1.8-1.7,4-2.5,6.5-2.5c3.4,0,6.4,1.4,6.4,5.6v10.2H149.2z M149.2,33.3V31
+				c-0.8-1.1-2.2-1.6-3.7-1.6c-1.9,0-3.3,1.1-3.3,2.8c0,1.7,1.4,2.8,3.3,2.8C147,34.9,148.5,34.4,149.2,33.3z"/>
+			<path class="st20" d="M155.4,34.5c1.3,0,2-1.5,2.6-5.6l0.9-7.5h11.9v15.5h-3.4V24.3h-5.6l-0.5,5c-0.6,5.6-2.5,7.9-5.9,7.9V34.5z"
+				/>
+			<path class="st20" d="M174.3,29.1c0-4.5,3.3-8.1,7.8-8.1c4.6,0,7.6,3.6,7.6,8.4v0.8h-11.9c0.3,2.3,2,4.3,4.9,4.3
+				c1.5,0,3.3-0.6,4.4-1.7l1.5,2.2c-1.5,1.5-3.8,2.2-6.3,2.2C177.8,37.2,174.3,34,174.3,29.1z M182.2,23.8c-2.9,0-4.2,2.2-4.4,4.1
+				h8.7C186.5,26,185.2,23.8,182.2,23.8z"/>
+			<path class="st20" d="M192.4,29.1c0-4.5,3.3-8.1,7.8-8.1c4.6,0,7.6,3.6,7.6,8.4v0.8h-11.9c0.3,2.3,2,4.3,4.9,4.3
+				c1.5,0,3.3-0.6,4.4-1.7l1.5,2.2c-1.5,1.5-3.8,2.2-6.3,2.2C195.8,37.2,192.4,34,192.4,29.1z M200.2,23.8c-2.9,0-4.2,2.2-4.4,4.1
+				h8.7C204.5,26,203.3,23.8,200.2,23.8z"/>
+		</g>
+	</g>
+</g>
+</svg>
+                    <svg width="240" height="40" version="1.1" id="passive-next-btn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 333 56" style="enable-background:new 0 0 333 56;" xml:space="preserve">
+<style type="text/css">
+	.st000{fill:#FCEE21;}
+	.st100{fill:#FCEE21;}
+</style>
+<g>
+	<g>
+		<path class="st000" d="M310.7,3l18.6,25l-18.6,25H3V3H310.7 M312.2,0H0v56h312.2L333,28L312.2,0L312.2,0z"/>
+	</g>
+	<g>
+		<g>
+			<path class="st100" d="M114.6,33.9c2.3-0.3,3.5-1.1,4.2-7.4l1.2-11h14.5v18h2v7.2h-3.7v-3.9h-14.5v3.9h-3.7V33.9z M119.7,33.5h11.1
+				V18.8h-7.4l-0.9,7.9C122.1,30.1,121.1,32.2,119.7,33.5z"/>
+			<path class="st100" d="M149.2,36.8v-1.7c-1.2,1.3-2.9,2-5,2c-2.5,0-5.4-1.7-5.4-5.1c0-3.6,2.8-5,5.4-5c2.1,0,3.9,0.7,5,2v-2.3
+				c0-1.8-1.5-2.9-3.6-2.9c-1.7,0-3.2,0.6-4.6,2l-1.4-2.3c1.8-1.7,4-2.5,6.5-2.5c3.4,0,6.4,1.4,6.4,5.6v10.2H149.2z M149.2,33.3V31
+				c-0.8-1.1-2.2-1.6-3.7-1.6c-1.9,0-3.3,1.1-3.3,2.8c0,1.7,1.4,2.8,3.3,2.8C147,34.9,148.5,34.4,149.2,33.3z"/>
+			<path class="st100" d="M155.4,34.5c1.3,0,2-1.5,2.6-5.6l0.9-7.5h11.9v15.5h-3.4V24.3h-5.6l-0.5,5c-0.6,5.6-2.5,7.9-5.9,7.9V34.5z"
+				/>
+			<path class="st100" d="M174.3,29.1c0-4.5,3.3-8.1,7.8-8.1c4.6,0,7.6,3.6,7.6,8.4v0.8h-11.9c0.3,2.3,2,4.3,4.9,4.3
+				c1.5,0,3.3-0.6,4.4-1.7l1.5,2.2c-1.5,1.5-3.8,2.2-6.3,2.2C177.8,37.2,174.3,34,174.3,29.1z M182.2,23.8c-2.9,0-4.2,2.2-4.4,4.1
+				h8.7C186.5,26,185.2,23.8,182.2,23.8z"/>
+			<path class="st100" d="M192.4,29.1c0-4.5,3.3-8.1,7.8-8.1c4.6,0,7.6,3.6,7.6,8.4v0.8h-11.9c0.3,2.3,2,4.3,4.9,4.3
+				c1.5,0,3.3-0.6,4.4-1.7l1.5,2.2c-1.5,1.5-3.8,2.2-6.3,2.2C195.8,37.2,192.4,34,192.4,29.1z M200.2,23.8c-2.9,0-4.2,2.2-4.4,4.1
+				h8.7C204.5,26,203.3,23.8,200.2,23.8z"/>
+		</g>
+	</g>
+</g>
+</svg>
+
+                </div>
+                <div id="order-send-btn">
+                    <svg version="1.1" id="passive-send-btn" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 333 56" style="enable-background:new 0 0 333 56;" xml:space="preserve">
+<style type="text/css">
+	.st05{fill:#FCEE21;}
+	.st15{fill:#FCEE21;}
+</style>
+<g>
+	<g>
+		<path class="st05" d="M310.7,3l18.6,25l-18.6,25H3V3H310.7 M312.2,0H0v56h312.2L333,28L312.2,0L312.2,0z"/>
+	</g>
+	<g>
+		<g>
+			<path class="st15" d="M82.9,26.2c0-6.4,4.5-11,10.9-11s10.9,4.7,10.9,11c0,6.4-4.5,11-10.9,11S82.9,32.6,82.9,26.2z M100.9,26.2
+				c0-4.4-2.8-7.7-7.1-7.7c-4.3,0-7.1,3.3-7.1,7.7c0,4.4,2.8,7.7,7.1,7.7C98.1,33.9,100.9,30.6,100.9,26.2z"/>
+			<path class="st15" d="M111.5,36.8V24.3h-4.4v-2.9h12.2v2.9h-4.4v12.5H111.5z"/>
+			<path class="st15" d="M132.5,36.8V24.3h-7.1v12.5h-3.4V21.4h13.8v15.5H132.5z"/>
+			<path class="st15" d="M143.7,34.7v8h-3.4V21.4h3.4v2.1c1.2-1.5,2.9-2.5,5-2.5c4,0,6.8,3,6.8,8.1c0,5.1-2.8,8.1-6.8,8.1
+				C146.7,37.2,144.9,36.4,143.7,34.7z M152,29.1c0-3-1.7-5.1-4.4-5.1c-1.6,0-3.2,0.9-4,2.1v6.1c0.7,1.1,2.4,2.1,4,2.1
+				C150.3,34.2,152,32.1,152,29.1z"/>
+			<path class="st15" d="M168.4,36.8v-1.7c-1.2,1.3-2.9,2-5,2c-2.5,0-5.4-1.7-5.4-5.1c0-3.6,2.8-5,5.4-5c2.1,0,3.9,0.7,5,2v-2.3
+				c0-1.8-1.5-2.9-3.6-2.9c-1.7,0-3.2,0.6-4.6,2l-1.4-2.3c1.8-1.7,4-2.5,6.5-2.5c3.4,0,6.4,1.4,6.4,5.6v10.2H168.4z M168.4,33.3V31
+				c-0.8-1.1-2.2-1.6-3.7-1.6c-1.9,0-3.3,1.1-3.3,2.8c0,1.7,1.4,2.8,3.3,2.8C166.2,34.9,167.7,34.4,168.4,33.3z"/>
+			<path class="st15" d="M176.2,36.8V21.4h9.2c2.9,0,4.6,1.8,4.6,4c0,1.9-1.2,3.1-2.6,3.5c1.7,0.4,2.9,2,2.9,3.8
+				c0,2.4-1.7,4.2-4.7,4.2H176.2z M186.6,25.9c0-1-0.6-1.6-1.7-1.6h-5.3v3.1h5.3C186,27.5,186.6,26.8,186.6,25.9z M186.9,32.2
+				c0-0.9-0.7-1.8-1.9-1.8h-5.4v3.5h5.4C186.2,33.9,186.9,33.3,186.9,32.2z"/>
+			<path class="st15" d="M194.4,36.8V21.4h3.4v10.4l7.1-10.4h3.4v15.5h-3.4V26.2l-7.2,10.7H194.4z"/>
+			<path class="st15" d="M215.4,36.8V24.3H211v-2.9h12.2v2.9h-4.4v12.5H215.4z"/>
+			<path class="st15" d="M229.4,21.4V27h5.5c3.4,0,5.1,2.3,5.1,4.9s-1.8,4.9-5.1,4.9H226V21.4H229.4z M229.4,29.9v4h5.1
+				c1.3,0,2.1-0.8,2.1-2s-0.8-2-2.1-2H229.4z"/>
+		</g>
+	</g>
+</g>
+</svg>
+                    <svg version="1.1" id="active-send-btn" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 333 56" style="enable-background:new 0 0 333 56;" xml:space="preserve">
+<style type="text/css">
+	.st06{fill:#FCEE21;}
+	.st26{fill:#662D91;}
+</style>
+<g>
+	<polygon class="st06" points="312.2,56 0,56 0,0 312.2,0 333,28 	"/>
+	<g>
+		<g>
+			<path class="st26" d="M82.9,26.2c0-6.4,4.5-11,10.9-11s10.9,4.7,10.9,11s-4.5,11-10.9,11S82.9,32.6,82.9,26.2z M100.9,26.2
+				c0-4.4-2.8-7.7-7.1-7.7c-4.3,0-7.1,3.3-7.1,7.7c0,4.4,2.8,7.7,7.1,7.7C98.1,33.9,100.9,30.6,100.9,26.2z"/>
+			<path class="st26" d="M111.5,36.8V24.3h-4.4v-2.9h12.2v2.9h-4.4v12.5H111.5z"/>
+			<path class="st26" d="M132.5,36.8V24.3h-7.1v12.5h-3.4V21.4h13.8v15.5H132.5z"/>
+			<path class="st26" d="M143.7,34.7v8h-3.4V21.4h3.4v2.1c1.2-1.5,2.9-2.5,5-2.5c4,0,6.8,3,6.8,8.1c0,5.1-2.8,8.1-6.8,8.1
+				C146.7,37.2,144.9,36.4,143.7,34.7z M152,29.1c0-3-1.7-5.1-4.4-5.1c-1.6,0-3.2,0.9-4,2.1v6.1c0.7,1.1,2.4,2.1,4,2.1
+				C150.3,34.2,152,32.1,152,29.1z"/>
+			<path class="st26" d="M168.4,36.8v-1.7c-1.2,1.3-2.9,2-5,2c-2.5,0-5.4-1.7-5.4-5.1c0-3.6,2.8-5,5.4-5c2.1,0,3.9,0.7,5,2v-2.3
+				c0-1.8-1.5-2.9-3.6-2.9c-1.7,0-3.2,0.6-4.6,2l-1.4-2.3c1.8-1.7,4-2.5,6.5-2.5c3.4,0,6.4,1.4,6.4,5.6v10.2H168.4z M168.4,33.3V31
+				c-0.8-1.1-2.2-1.6-3.7-1.6c-1.9,0-3.3,1.1-3.3,2.8c0,1.7,1.4,2.8,3.3,2.8C166.2,34.9,167.7,34.4,168.4,33.3z"/>
+			<path class="st26" d="M176.2,36.8V21.4h9.2c2.9,0,4.6,1.8,4.6,4c0,1.9-1.2,3.1-2.6,3.5c1.7,0.4,2.9,2,2.9,3.8
+				c0,2.4-1.7,4.2-4.7,4.2H176.2z M186.6,25.9c0-1-0.6-1.6-1.7-1.6h-5.3v3.1h5.3C186,27.5,186.6,26.8,186.6,25.9z M186.9,32.2
+				c0-0.9-0.7-1.8-1.9-1.8h-5.4v3.5h5.4C186.2,33.9,186.9,33.3,186.9,32.2z"/>
+			<path class="st26" d="M194.4,36.8V21.4h3.4v10.4l7.1-10.4h3.4v15.5h-3.4V26.2l-7.2,10.7H194.4z"/>
+			<path class="st26" d="M215.4,36.8V24.3H211v-2.9h12.2v2.9h-4.4v12.5H215.4z"/>
+			<path class="st26" d="M229.4,21.4V27h5.5c3.4,0,5.1,2.3,5.1,4.9s-1.8,4.9-5.1,4.9H226V21.4H229.4z M229.4,29.9v4h5.1
+				c1.3,0,2.1-0.8,2.1-2s-0.8-2-2.1-2H229.4z"/>
+		</g>
+	</g>
+</g>
+</svg>
+                </div>
+            </div>
+
+            <div class="thanks-block">
+                <div class="thanks-block-flex-layout">
+                    <div class="thanks-block-flex-block">Спасибо!</div>
+                    <div class="thanks-block-flex-block">Ваша заявка принята</div>
+                    <div class="thanks-block-flex-block regular-msg">Мы свяжемся с вами в течение суток для уточнения информации.</div>
+                    <div class="thanks-block-flex-block regular-msg">телефон для справок:</div>
+                    <div class="thanks-block-flex-block">+7 (3462) 310-123</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% csrf_token %}
+{% endblock %}

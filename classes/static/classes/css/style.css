@@ -1,0 +1,441 @@
+/*Шрифты - здесь.*/
+@font-face {
+      font-family: "ProximaNovaBold";
+      src: url(../fonts/ProximaNovaBold.otf);
+}
+@font-face {
+      font-family: "ProximaNovaRegular";
+      src: url(../fonts/ProximaNovaRegular.otf);
+}
+@font-face {
+      font-family: "ProximaNovaLightItalic";
+      src: url(../fonts/ProximaNovaLightItalic.otf);
+}
+@font-face {
+      font-family: "ProximaNovaRegularItalic";
+      src: url(../fonts/ProximaNovaRegularItalic.otf);
+}
+
+
+
+/*Описание стилей*/
+body{
+    min-width: 720px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    min-height: calc(100vh - 106px);
+}
+
+header{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.background-svg-container{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.dinamic-content{
+
+}
+
+#background-svg{
+    width: 100%;
+    height: 100%;
+}
+
+#kamerton-header-svg{
+    width: 100%;
+}
+
+footer{
+    font-family: 'ProximaNovaRegular';
+    color: #fff;
+    font-size: 10pt;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+}
+
+.developing-by {
+    width: calc(100% - 20px);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-div {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+
+.content{
+    width:610px;
+    margin: 40px auto;
+}
+
+.description{
+    font-family: 'ProximaNovaRegular';
+    font-size: 12pt;
+    color: #fff;
+    text-align: left;
+}
+
+.description-slogan, .order-second-level-description, .order-third-level-description{
+    font-family: 'ProximaNovaBold';
+    font-size: 16pt;
+    color: #FCEE21;
+}
+
+.order-second-level-description, .order-third-level-description{
+    margin-bottom: 30px;
+}
+
+.description span{
+    color: #FCEE21;
+}
+
+.order-form{
+    max-width: 610px;
+    margin: 0 auto;
+}
+
+.order-form-group{
+    margin: 20px auto 0 auto;
+}
+
+.order-form label{
+    display: block;
+    text-align: left;
+    font-family: 'ProximaNovaBold';
+    font-size: 16pt;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.order-form-input{
+    text-align: left;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 0 5px;
+    font-family: 'ProximaNovaRegular';
+    font-size: 14pt;
+    height: 40px;
+    display: block;
+    width: 280px;
+    background: inherit;
+}
+
+.order-form-input:focus{
+    outline: 2px solid #FCEE21;
+}
+
+.order-form-alternative-input:focus{
+    outline: none;
+}
+
+.order-form-alternative-input{
+    border: none;
+    height: 40px;
+    color: #fff;
+    padding: 0 5px;
+    border-bottom: 2px solid #fff;
+    background: inherit;
+    font-family: 'ProximaNovaRegular';
+    font-size: 14pt;
+    width: 280px;
+}
+
+.management-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px 0 0 0;
+}
+/*
+.order-form-btn-container{
+    position: relative;
+    width: 204px;
+    display: inline-block;
+}
+
+#order-form-btn{
+    vertical-align: top;
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.order-form-btn-polygon-right-text{
+    position: absolute;
+    width: 60px;
+    height: 19px;
+    left: 50%;
+    top: 50%;
+    margin-top: -12px;
+    margin-left: -30px;
+    font-family: 'ProximaNovaBold';
+    font-size: 14pt;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.order-form-btn-polygon-right{
+    fill:#fff;
+    stroke:#000;
+    stroke-miterlimit:10;
+    stroke-width:5px;
+    transition: 0.3s;
+}
+*/
+
+#order-next-btn{
+    width: 240px;
+    height: 40px;
+}
+
+#order-cancel-btn{
+    display: none;
+    margin-right: 6px;
+    width: 64px;
+    height: 40px;
+}
+
+#order-send-btn{
+    display: none;
+    width: 240px;
+    height: 40px;
+}
+
+#developer-logo{
+    width: 40px;
+    height: 56px;
+    cursor:pointer;
+}
+
+#developer-logo path, #developer-logo rect{
+    fill: #ffffff;
+}
+
+#inst-logo{
+    width: 16px;
+    cursor:pointer;
+}
+
+#vk-logo{
+    margin-bottom: 6px;
+    width: 16px;
+    cursor:pointer;
+}
+
+.vk-logo-path{
+    fill: #FFFF33;
+}
+
+.inst-logo-path{
+    fill: #ED1E79;
+}
+
+.svg {
+    display: flex;
+    flex-direction: column;
+}
+
+.dev-logo-div {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.address, .phone{
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.phone span{
+    color: #FCEE21;
+}
+
+#order-form-btn-cancel{
+    width: 100%;
+}
+
+.order-form-btn-cancel-container{
+    display: none;
+    vertical-align: top;
+    width: 54px;
+    height: 40px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.order-second-level{
+    font-family: 'ProximaNovaBold';
+    font-size: 14pt;
+}
+
+.child-gender{
+    width: 200px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.child-gender-item{
+    margin: 0 10px 0 0;
+    font-family: 'ProximaNovaRegular';
+    font-size: 12pt;
+    color: #fff;
+    cursor: pointer;
+}
+
+.active{
+    color: #ED1E79;
+    font-family: "ProximaNovaBold";
+    border-bottom: 2px solid #ED1E79;
+}
+
+.form-first-level-layout, .form-second-level-layout, .form-third-level-layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-third-level-layout{
+    margin-bottom: 40px;
+}
+.form-first-level-layout-block, .form-second-level-layout-block{
+    min-height: 234px;
+    flex-direcrion:column;
+    flex-wrap: wrap;
+}
+
+.form-third-level-layout-block{
+    width: 136px;
+    flex-wrap: wrap;
+    height: 268px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    background-size: cover;
+    color: #FCEE21;
+    font-family: 'ProximaNovaRegular';
+    font-size: 12pt;
+    padding: 10px 0 0 10px;
+}
+
+.active-studio-kind{
+    background-color: #ED1E79;
+    color: #fff;
+}
+
+#vocal-studio-kind{
+    background-image: url(../images/voice_img_1-1.png);
+}
+
+#theater-studio-kind{
+    background-image: url(../images/theatre_img_1-1.png);
+}
+
+#modern-choreography-studio-kind{
+    background-image: url(../images/modern-dance_img_1-1.png);
+}
+
+#sport-ballroom-studio-kind{
+    background-image: url(../images/balet-sport-dance_img_1-1.png);
+}
+
+.studio-kind:hover{
+    background-color: #ED1E79;
+    color: #fff;
+}
+
+.separator{
+    width: 100%;
+    height: 2px;
+    background: #FCEE21;
+    margin: 15px 0 0 0;
+}
+
+.error-warning{
+    font-family: 'ProximaNovaRegularItalic';
+    font-size: 10pt;
+    text-align: right;
+    color: #FFFFFF;
+    padding: 15px 0;
+    visibility: hidden;
+}
+
+.age-warning{
+    font-family: 'ProximaNovaRegularItalic';
+    font-size: 10pt;
+    text-align: left;
+    color: #FCEE21;
+    padding: 15px 0;
+}
+
+#passive-next-btn, #active-next-btn, #passive-cancel-btn, #active-cancel-btn, #passive-send-btn, #active-send-btn{
+    cursor: pointer;
+}
+
+#active-next-btn, #active-cancel-btn, #active-send-btn{
+    display: none;
+}
+
+.order-second-level, .order-third-level, .thanks-block{
+    display: none;
+}
+
+.thanks-block-flex-layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #ED1E79;
+    padding: 20px;
+    width: 360px;
+    margin: 0 auto;
+}
+
+.thanks-block-flex-block{
+    font-family: 'ProximaNovaBold';
+    font-size: 22pt;
+    text-align: left;
+    color: #FCEE21;
+}
+
+.regular-msg{
+    margin-top: 40px;
+    font-family: 'ProximaNovaRegular';
+    font-size: 16pt;
+    text-align: left;
+    color: #fff;
+}
+
+.loader{
+    text-align: center;
+    display: none;
+}
+
+input::-moz-placeholder { color: #bdbdbd; }
+input::-webkit-input-placeholder { color: #bdbdbd; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
